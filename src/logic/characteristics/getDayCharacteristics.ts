@@ -1,23 +1,17 @@
 import { Temporal } from "@js-temporal/polyfill";
 import { DayCharacteristic, WeekDayCharacteristic } from "./dayCharacteristics";
-import { getRokuyouOfDay } from "./rokuyou";
+import { getRokuyouOfDay } from "../rokuyou";
 
 export function getDayCharacteristics(
   day: Temporal.PlainDate
-): Set<DayCharacteristic> {
-  const result = new Set<DayCharacteristic>();
-  // weekday
-  result.add(getWeekdayCharacteristics(day));
-  // 六曜
+): DayCharacteristic {
   const rokuyouC = getRokuyouOfDay(day);
-  if (rokuyouC !== undefined) {
-    result.add(`rokuyou:${rokuyouC}`);
-  }
-  // year
-  result.add(`year:${day.year}`);
-  // month
-  result.add(`month:${day.month}`);
-  return result;
+  return {
+    weekDay: getWeekdayCharacteristics(day),
+    ...(rokuyouC !== undefined ? { rokuyou: `rokuyou:${rokuyouC}` } : {}),
+    year: `year:${day.year}`,
+    month: `month:${day.month}`,
+  };
 }
 
 function getWeekdayCharacteristics(

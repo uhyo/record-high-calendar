@@ -1,4 +1,4 @@
-import { Rokuyou } from "./rokuyou";
+import { Rokuyou } from "../rokuyou";
 
 /**
  * Characteristic that expresses the week day of a day.
@@ -25,8 +25,9 @@ export type YearCharacteristic = `year:${number}`;
  */
 export type MonthCharacteristic = `month:${number}`;
 
-export type DayCharacteristic =
-  | WeekDayCharacteristic
-  | RokuyouCharacteristic
-  | YearCharacteristic
-  | MonthCharacteristic;
+export type DayCharacteristic = {
+  weekDay: WeekDayCharacteristic;
+  rokuyou?: RokuyouCharacteristic;
+  year: YearCharacteristic;
+  month: MonthCharacteristic;
+};
