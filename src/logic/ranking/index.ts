@@ -13,13 +13,23 @@ export function generateRanking(
     num: number;
   }[]
 ) {
+  const sorted = data
+    .map(({ date, num }) => ({
+      day: Temporal.PlainDate.from(date),
+      num,
+    }))
+    .sort((a, b) => Temporal.PlainDate.compare(a.day, b.day));
   const rankingData = new Map<
     string,
-    { date: string; num: number; rank: number }[]
+    {
+      day: Temporal.PlainDate;
+      num: number;
+      thenRank: number;
+      currentRank: number;
+    }[]
   >();
   // Generate ranking data before sorting.
-  for (const { date, num } of data) {
-    const day = Temporal.PlainDate.from(date);
+  for (const { day, num } of sorted) {
     const allCharacteristics = getDayCharacteristics(day);
     for (const partialCharacteristics of partialObjects(allCharacteristics)) {
       const rawData = mapGetOrInsertDefault(
@@ -27,30 +37,60 @@ export function generateRanking(
         getPartialCharacteristicsId(partialCharacteristics),
         []
       );
-      rawData.push({
-        date,
+      const insertIndex = binarySearch(rawData, num);
+      rawData.splice(insertIndex, 0, {
+        day,
         num,
-        rank: -1,
+        thenRank: rawData.length - insertIndex + 1,
+        currentRank: -1,
       });
     }
   }
-  // Sort each ranking data.
-  // Also, set rank to each item.
+  // Sort each ranking data to set current rank to each item.
   for (const [, rawData] of rankingData) {
-    rawData.sort((a, b) => b.num - a.num);
     for (const [i, item] of rawData.entries()) {
-      item.rank = i + 1;
+      item.currentRank = rawData.length - i;
     }
   }
   // Generate map from date to rank.
-  const rankingMap = new Map<string, Map<string, number>>();
+  const rankingMap = new Map<
+    string,
+    Map<
+      string,
+      {
+        thenRank: number;
+        currentRank: number;
+      }
+    >
+  >();
   for (const [characteristicId, rawData] of rankingData) {
-    for (const { date, rank } of rawData) {
+    for (const { day, thenRank, currentRank } of rawData) {
       mapGetOrInsertDefault(rankingMap, characteristicId, new Map()).set(
-        date,
-        rank
+        day.toString(),
+        {
+          thenRank,
+          currentRank,
+        }
       );
     }
   }
   return rankingMap;
+}
+
+/**
+ * Binary search. Returns the largest index such that
+ * all elements before the returned index are less than the target.
+ */
+function binarySearch(arr: readonly { num: number }[], target: number) {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start <= end) {
+    const mid = Math.ceil((start + end) / 2);
+    if (arr[mid]!.num < target) {
+      start = mid + 1;
+    } else if (arr[mid]!.num >= target) {
+      end = mid - 1;
+    }
+  }
+  return start;
 }
