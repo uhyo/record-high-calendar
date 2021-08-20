@@ -14,11 +14,23 @@ type State<T> =
 
 export class Loadable<T> {
   static fulfill<T>(value: T): Loadable<T> {
-    return new Loadable(Promise.resolve(value));
+    const result = new Loadable<T>(undefined);
+    result.#state = {
+      state: "fulfilled",
+      value,
+    };
+    return result;
   }
 
   #state: State<T>;
-  constructor(promise: Promise<T>) {
+  constructor(promise: Promise<T> | undefined) {
+    if (promise === undefined) {
+      this.#state = {
+        state: "pending",
+        promise: new Promise<T>(() => {}),
+      };
+      return;
+    }
     const thenPromise = promise.then(
       (value) => {
         this.#state = {

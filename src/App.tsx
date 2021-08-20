@@ -1,6 +1,7 @@
 import React, { Suspense, useCallback } from "react";
 import classes from "./App.module.css";
 import { DataInput } from "./components/DataInput";
+import { RankingCalendar } from "./components/RankingCalendar";
 import { useRanking } from "./hooks/useRanking";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         </header>
         <main className={classes.main}>
           <DataInput onChange={onChange} />
+          <hr className={classes.separator} />
+          <RankingCalendar rankingLoadable={ranking} />
         </main>
       </Suspense>
     </div>

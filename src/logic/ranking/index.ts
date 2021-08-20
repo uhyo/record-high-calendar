@@ -3,6 +3,7 @@ import { getDayCharacteristics } from "../characteristics/getDayCharacteristics"
 import { mapGetOrInsertDefault } from "../util/mapGetOrInsertDefault";
 import { partialObjects } from "../util/partialObjects";
 import { getPartialCharacteristicsId } from "./getPartialCharacteristicsId";
+import { Ranking } from "./Ranking";
 
 /**
  * Generate ranking of days.
@@ -12,7 +13,7 @@ export function generateRanking(
     date: string;
     num: number;
   }[]
-) {
+): Ranking {
   const sorted = data
     .map(({ date, num }) => ({
       day: Temporal.PlainDate.from(date),
