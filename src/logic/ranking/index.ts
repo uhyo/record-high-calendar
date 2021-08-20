@@ -1,7 +1,6 @@
 import { Temporal } from "@js-temporal/polyfill";
 import { DayCharacteristic } from "../characteristics/dayCharacteristics";
 import { getDayCharacteristics } from "../characteristics/getDayCharacteristics";
-import { mapEnsure } from "../util/mapEnsure";
 import { mapGetOrInsertDefault } from "../util/mapGetOrInsertDefault";
 import { partialObjects } from "../util/partialObjects";
 import { getCharacteristicsRarity } from "./getCharacteristicsRarity";
@@ -23,52 +22,56 @@ export function generateRanking(
       num,
     }))
     .sort((a, b) => Temporal.PlainDate.compare(a.day, b.day));
-  const rankingData = new Map<
+  const rankingDataByCharacteristics = new Map<
     string,
     {
-      day: Temporal.PlainDate;
-      num: number;
-      thenRank: number;
-      currentRank: number;
-    }[]
-  >();
-  const characteristicRevMap = new Map<
-    string,
-    {
-      rarity: number;
       characteristic: Partial<DayCharacteristic>;
+      arr: {
+        day: Temporal.PlainDate;
+        num: number;
+        thenRank: number;
+        currentRank: number;
+      }[];
     }
   >();
-
   // Generate ranking data before sorting.
   for (const { day, num } of sorted) {
     const allCharacteristics = getDayCharacteristics(day);
     for (const partialCharacteristics of partialObjects(allCharacteristics)) {
+      const rarity = getCharacteristicsRarity(partialCharacteristics);
+      if (rarity === undefined) {
+        // non-applicable combination of characteristics
+        continue;
+      }
       const pid = getPartialCharacteristicsId(partialCharacteristics);
-      mapEnsure(characteristicRevMap, pid, () => ({
-        rarity: getCharacteristicsRarity(partialCharacteristics),
-        characteristic: partialCharacteristics,
-      }));
-      const rawData = mapGetOrInsertDefault(rankingData, pid, []);
-      const insertIndex = binarySearch(rawData, num);
-      rawData.splice(insertIndex, 0, {
+      const rawData = mapGetOrInsertDefault(
+        rankingDataByCharacteristics,
+        pid,
+        () => ({ characteristic: partialCharacteristics, arr: [] })
+      );
+      const insertIndex = binarySearch(rawData.arr, num);
+      const rankEntry = {
         day,
         num,
-        thenRank: rawData.length - insertIndex + 1,
+        thenRank: rawData.arr.length - insertIndex + 1,
         currentRank: -1,
-      });
+      };
+
+      rawData.arr.splice(insertIndex, 0, rankEntry);
     }
   }
   // Sort each ranking data to set current rank to each item.
-  for (const [, rawData] of rankingData) {
-    for (const [i, item] of rawData.entries()) {
-      item.currentRank = rawData.length - i;
+  for (const [, { arr }] of rankingDataByCharacteristics) {
+    for (const [i, item] of arr.entries()) {
+      item.currentRank = arr.length - i;
     }
   }
   // Generate map from date to rank.
   const rankingMap = new Map<
+    // date
     string,
     Map<
+      // characteristic
       string,
       {
         thenRank: number;
@@ -76,10 +79,33 @@ export function generateRanking(
       }
     >
   >();
-  for (const [characteristicId, rawData] of rankingData) {
-    for (const { day, thenRank, currentRank } of rawData) {
-      mapGetOrInsertDefault(rankingMap, characteristicId, new Map()).set(
-        day.toString(),
+  const characteristicRevMap = new Map<
+    string,
+    {
+      rarity: number;
+      count: number;
+      characteristic: Partial<DayCharacteristic>;
+    }
+  >();
+
+  for (const [characteristicId, rawData] of rankingDataByCharacteristics) {
+    const rarity = getCharacteristicsRarity(rawData.characteristic);
+    if (rarity === undefined) {
+      continue;
+    }
+    const count = rawData.arr.length;
+    if (count < 2) {
+      // not ranking
+      continue;
+    }
+    characteristicRevMap.set(characteristicId, {
+      rarity,
+      count: rawData.arr.length,
+      characteristic: rawData.characteristic,
+    });
+    for (const { day, thenRank, currentRank } of rawData.arr) {
+      mapGetOrInsertDefault(rankingMap, day.toString(), () => new Map()).set(
+        characteristicId,
         {
           thenRank,
           currentRank,
