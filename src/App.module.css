@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.loading {
+  font-size: 1.5em;
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+}
+
+.main {
+  padding: 1em;
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
