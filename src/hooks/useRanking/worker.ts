@@ -18,12 +18,12 @@ ctx.addEventListener("message", (e: MessageEvent) => {
       }
       return [{ date: date!, num: n }];
     });
-    const rankings = generateRanking(dates);
+    const result = generateRanking(dates);
     // send back to main thread
     ctx.postMessage({
       requestId,
       success: true,
-      rankings,
+      result,
     });
   } catch (err) {
     console.error(err);

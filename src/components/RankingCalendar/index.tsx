@@ -1,15 +1,22 @@
 import React from "react";
-import { Ranking } from "../../logic/ranking/Ranking";
+import { RankingCalculationResult } from "../../logic/ranking/Ranking";
 import { Loadable } from "../../utils/Loadable";
 
 type Props = {
-  rankingLoadable: Loadable<Ranking | undefined>;
+  rankingLoadable: Loadable<RankingCalculationResult | undefined>;
 };
 
 export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
-  const ranking = rankingLoadable.getOrThrow();
-  if (ranking === undefined) {
+  const result = rankingLoadable.getOrThrow();
+  if (result === undefined) {
     return null;
   }
-  return <div>{String(ranking)}</div>;
+
+  const { ranking, characteristicRevMap } = result;
+
+  const sortedRanking = Array.from(ranking.entries()).sort((a, b) =>
+    a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0
+  );
+
+  return <div>{String(sortedRanking)}</div>;
 };

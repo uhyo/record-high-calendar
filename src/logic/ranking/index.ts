@@ -1,9 +1,12 @@
 import { Temporal } from "@js-temporal/polyfill";
+import { DayCharacteristic } from "../characteristics/dayCharacteristics";
 import { getDayCharacteristics } from "../characteristics/getDayCharacteristics";
+import { mapEnsure } from "../util/mapEnsure";
 import { mapGetOrInsertDefault } from "../util/mapGetOrInsertDefault";
 import { partialObjects } from "../util/partialObjects";
+import { getCharacteristicsRarity } from "./getCharacteristicsRarity";
 import { getPartialCharacteristicsId } from "./getPartialCharacteristicsId";
-import { Ranking } from "./Ranking";
+import { RankingCalculationResult } from "./Ranking";
 
 /**
  * Generate ranking of days.
@@ -13,7 +16,7 @@ export function generateRanking(
     date: string;
     num: number;
   }[]
-): Ranking {
+): RankingCalculationResult {
   const sorted = data
     .map(({ date, num }) => ({
       day: Temporal.PlainDate.from(date),
@@ -29,15 +32,24 @@ export function generateRanking(
       currentRank: number;
     }[]
   >();
+  const characteristicRevMap = new Map<
+    string,
+    {
+      rarity: number;
+      characteristic: Partial<DayCharacteristic>;
+    }
+  >();
+
   // Generate ranking data before sorting.
   for (const { day, num } of sorted) {
     const allCharacteristics = getDayCharacteristics(day);
     for (const partialCharacteristics of partialObjects(allCharacteristics)) {
-      const rawData = mapGetOrInsertDefault(
-        rankingData,
-        getPartialCharacteristicsId(partialCharacteristics),
-        []
-      );
+      const pid = getPartialCharacteristicsId(partialCharacteristics);
+      mapEnsure(characteristicRevMap, pid, () => ({
+        rarity: getCharacteristicsRarity(partialCharacteristics),
+        characteristic: partialCharacteristics,
+      }));
+      const rawData = mapGetOrInsertDefault(rankingData, pid, []);
       const insertIndex = binarySearch(rawData, num);
       rawData.splice(insertIndex, 0, {
         day,
@@ -75,7 +87,10 @@ export function generateRanking(
       );
     }
   }
-  return rankingMap;
+  return {
+    ranking: rankingMap,
+    characteristicRevMap,
+  };
 }
 
 /**

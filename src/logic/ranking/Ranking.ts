@@ -1,3 +1,5 @@
+import type { DayCharacteristic } from "../characteristics/dayCharacteristics";
+
 export type Ranking = Map<
   string,
   Map<
@@ -8,3 +10,14 @@ export type Ranking = Map<
     }
   >
 >;
+
+export type RankingCalculationResult = {
+  ranking: Ranking;
+  characteristicRevMap: Map<
+    string,
+    {
+      rarity: number;
+      characteristic: Partial<DayCharacteristic>;
+    }
+  >;
+};

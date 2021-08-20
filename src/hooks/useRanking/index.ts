@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import type { Ranking } from "../../logic/ranking/Ranking";
+import type { RankingCalculationResult } from "../../logic/ranking/Ranking";
 import { Loadable } from "../../utils/Loadable";
 import Worker from "./worker?worker";
 
@@ -7,7 +7,7 @@ type WorkerResponse =
   | {
       success: true;
       requestId: string;
-      rankings: Ranking;
+      result: RankingCalculationResult;
     }
   | {
       success: false;
@@ -16,16 +16,16 @@ type WorkerResponse =
     };
 
 type UseRankingResult = {
-  ranking: Loadable<Ranking | undefined>;
+  ranking: Loadable<RankingCalculationResult | undefined>;
   calculateRanking: (data: string) => void;
 };
 
 export function useRanking(): UseRankingResult {
   const [rankingWorker] = useState<Worker>(() => new Worker());
 
-  const [ranking, setRanking] = useState<Loadable<Ranking | undefined>>(() =>
-    Loadable.fulfill(undefined)
-  );
+  const [ranking, setRanking] = useState<
+    Loadable<RankingCalculationResult | undefined>
+  >(() => Loadable.fulfill(undefined));
 
   const calculateRanking = useCallback((data: string) => {
     const requestId = `calculateRanking-${Date.now()}`;
@@ -45,7 +45,7 @@ export function useRanking(): UseRankingResult {
             }
             console.info("response", data);
             if (data.success) {
-              resolve(data.rankings);
+              resolve(data.result);
             } else {
               reject(data.error);
             }
