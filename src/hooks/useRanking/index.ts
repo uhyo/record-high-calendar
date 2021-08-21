@@ -17,6 +17,7 @@ type WorkerResponse =
 
 type UseRankingResult = {
   ranking: Loadable<RankingCalculationResult | undefined>;
+  requestId: string | undefined;
   pending: boolean;
   calculateRanking: (data: string) => void;
 };
@@ -25,9 +26,10 @@ export function useRanking(): UseRankingResult {
   const [pending, startTransition] = useTransition();
   const [rankingWorker] = useState<Worker>(() => new Worker());
 
-  const [ranking, setRanking] = useState<
-    Loadable<RankingCalculationResult | undefined>
-  >(() => Loadable.fulfill(undefined));
+  const [ranking, setRanking] = useState<{
+    ranking: Loadable<RankingCalculationResult | undefined>;
+    requestId: string | undefined;
+  }>(() => ({ ranking: Loadable.fulfill(undefined), requestId: undefined }));
 
   const calculateRanking = useCallback((data: string) => {
     const requestId = `calculateRanking-${Date.now()}`;
@@ -38,8 +40,8 @@ export function useRanking(): UseRankingResult {
     console.info("request", message);
     rankingWorker.postMessage(message);
     startTransition(() => {
-      setRanking(
-        new Loadable(
+      setRanking({
+        ranking: new Loadable(
           new Promise((resolve, reject) => {
             const handler = (ev: MessageEvent) => {
               const data: WorkerResponse = ev.data;
@@ -57,13 +59,15 @@ export function useRanking(): UseRankingResult {
             };
             rankingWorker.addEventListener("message", handler);
           })
-        )
-      );
+        ),
+        requestId,
+      });
     });
   }, []);
 
   return {
-    ranking,
+    ranking: ranking.ranking,
+    requestId: ranking.requestId,
     pending,
     calculateRanking,
   };

@@ -1,12 +1,13 @@
 import React, { Suspense, useCallback } from "react";
 import classes from "./App.module.css";
 import { DataInput } from "./components/DataInput";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { LoadingIndicator } from "./components/LoadingIndicator";
 import { RankingCalendar } from "./components/RankingCalendar";
 import { useRanking } from "./hooks/useRanking";
 
 function App() {
-  const { ranking, pending, calculateRanking } = useRanking();
+  const { ranking, requestId, pending, calculateRanking } = useRanking();
   const onChange = useCallback(
     (data: string) => {
       calculateRanking(data);
@@ -27,7 +28,9 @@ function App() {
             {pending ? (
               <LoadingIndicator />
             ) : (
-              <RankingCalendar rankingLoadable={ranking} />
+              <ErrorBoundary key={requestId}>
+                <RankingCalendar rankingLoadable={ranking} />
+              </ErrorBoundary>
             )}
           </div>
         </main>
