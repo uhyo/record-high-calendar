@@ -5,7 +5,7 @@ import { mapGetOrInsertDefault } from "../util/mapGetOrInsertDefault";
 import { partialObjects } from "../util/partialObjects";
 import { getCharacteristicsRarity } from "./getCharacteristicsRarity";
 import { getPartialCharacteristicsId } from "./getPartialCharacteristicsId";
-import { RankingCalculationResult } from "./Ranking";
+import { Ranking, RankingCalculationResult } from "./Ranking";
 
 /**
  * Generate ranking of days.
@@ -67,18 +67,7 @@ export function generateRanking(
     }
   }
   // Generate map from date to rank.
-  const rankingMap = new Map<
-    // date
-    string,
-    Map<
-      // characteristic
-      string,
-      {
-        thenRank: number;
-        currentRank: number;
-      }
-    >
-  >();
+  const rankingMap: Ranking = new Map();
   const characteristicRevMap = new Map<
     string,
     {
@@ -103,14 +92,14 @@ export function generateRanking(
       count: rawData.arr.length,
       characteristic: rawData.characteristic,
     });
-    for (const { day, thenRank, currentRank } of rawData.arr) {
-      mapGetOrInsertDefault(rankingMap, day.toString(), () => new Map()).set(
-        characteristicId,
-        {
-          thenRank,
-          currentRank,
-        }
-      );
+    for (const { day, num, thenRank, currentRank } of rawData.arr) {
+      mapGetOrInsertDefault(rankingMap, day.toString(), () => ({
+        num,
+        ranks: new Map(),
+      })).ranks.set(characteristicId, {
+        thenRank,
+        currentRank,
+      });
     }
   }
   return {

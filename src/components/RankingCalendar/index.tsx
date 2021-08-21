@@ -22,7 +22,8 @@ export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
       .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
       .map(([date, rankings]) => ({
         day: Temporal.PlainDate.from(date),
-        rankings,
+        num: rankings.num,
+        ranks: rankings.ranks,
       }));
     return toCalendarMonths(sortedRanking);
   }, [ranking]);

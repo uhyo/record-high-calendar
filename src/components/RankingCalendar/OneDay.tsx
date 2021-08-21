@@ -7,7 +7,8 @@ import classes from "./OneDay.module.css";
 
 export type Day = {
   day: Temporal.PlainDate;
-  rankings: Map<
+  num: number;
+  ranks: Map<
     string,
     {
       thenRank: number;
@@ -58,10 +59,13 @@ export const OneDay: React.FC<Props> = ({ day, characteristicRevMap }) => {
       >
         {day.day.day}
       </span>
+      <span className={classes.numberDisplay}>{day.num}</span>
       {rankDesc && (
-        <p>
-          {rankDesc.isTop ? <strong>{rankDesc.text}</strong> : rankDesc.text}
-          {rankDesc.subDesc && <small>{rankDesc.subDesc}</small>}
+        <p className={classes.rankDesc}>
+          <span>
+            {rankDesc.isTop ? <strong>{rankDesc.text}</strong> : rankDesc.text}
+            {rankDesc.subDesc && <small>{rankDesc.subDesc}</small>}
+          </span>
         </p>
       )}
     </div>
@@ -71,7 +75,7 @@ export const OneDay: React.FC<Props> = ({ day, characteristicRevMap }) => {
 function useRankOfDay(day: Day, characteristicRevMap: CharacteristicRevMap) {
   // sort rankings by current rank. Same rank is sorted by characteristic score
   const sortedRankings = useMemo(() => {
-    return [...day.rankings.entries()].sort((a, b) => {
+    return [...day.ranks.entries()].sort((a, b) => {
       const rankDiff = a[1].currentRank - b[1].currentRank;
       if (rankDiff !== 0) {
         return rankDiff;
@@ -82,7 +86,7 @@ function useRankOfDay(day: Day, characteristicRevMap: CharacteristicRevMap) {
       const bcRarity = bc?.rarity ?? 0;
       return acRarity - bcRarity;
     });
-  }, [day.rankings]);
+  }, [day.ranks]);
   const ranking = sortedRankings[0];
   if (!ranking) {
     return undefined;

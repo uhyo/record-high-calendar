@@ -1,7 +1,8 @@
-.monthtitle {
+.monthTitle {
+  padding: 0.25rem;
   font-size: 1.5em;
   font-weight: bold;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .month {

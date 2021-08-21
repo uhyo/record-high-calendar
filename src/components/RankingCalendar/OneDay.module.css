@@ -6,8 +6,8 @@
 }
 
 .dateDisplay {
-  flex: 50% 0 1;
-  font-size: 2rem;
+  padding: 3px 0 10px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -17,4 +17,17 @@
 
 .saturday {
   color: #0000ff;
+}
+
+.numberDisplay {
+  font-size: 2rem;
+}
+
+.rankDesc {
+  flex: 50% 1 0;
+  padding: 2px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: start;
 }
