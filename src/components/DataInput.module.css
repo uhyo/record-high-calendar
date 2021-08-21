@@ -3,6 +3,13 @@
   height: 30em;
 }
 
+.controls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+
 .button {
   appearance: none;
   font-size: 2rem;
@@ -10,5 +17,14 @@
   border: none;
   background-color: #00b2e2;
   color: #fff;
+  border-radius: 3px;
+}
+
+.subbutton {
+  appearance: none;
+  font-size: 2rem;
+  border: none;
+  background-color: #ddd;
+  color: #333;
   border-radius: 3px;
 }
