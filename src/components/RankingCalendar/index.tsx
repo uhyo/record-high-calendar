@@ -16,7 +16,7 @@ export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
 
   const { ranking, characteristicRevMap } = result;
 
-  const weeks = useMemo(() => {
+  const months = useMemo(() => {
     const sortedRanking = Array.from(ranking.entries())
       .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
       .map(([date, rankings]) => ({
@@ -26,5 +26,5 @@ export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
     return toCalendarMonths(sortedRanking);
   }, [ranking]);
 
-  return <div>{String(weeks)}</div>;
+  return <div>{String(months)}</div>;
 };
