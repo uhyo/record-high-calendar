@@ -4,7 +4,7 @@ import { range } from "../../../utils/range";
 // Convert from 1=Monday... 7=Sunday to 0=Sunday... 6=Saturday
 const weekConv = [0, 1, 2, 3, 4, 5, 6, 0];
 
-type Month<T> = {
+export type Month<T> = {
   month: Temporal.PlainYearMonth;
   /**
    *  undefined means empty calendar cell
@@ -48,7 +48,6 @@ export function toCalendarMonths<T extends { day: Temporal.PlainDate }>(
         currentMonth.weeks.push(currentWeek);
         currentWeek = [];
       }
-      console.log(nextData?.day, currentDay);
       if (nextData?.day.equals(currentDay)) {
         // has data
         currentWeek.push(nextData);
@@ -60,6 +59,9 @@ export function toCalendarMonths<T extends { day: Temporal.PlainDate }>(
       currentDay = currentDay.add({ days: 1 });
     }
     if (currentWeek.length > 0) {
+      while (currentWeek.length < 7) {
+        currentWeek.push(undefined);
+      }
       currentMonth.weeks.push(currentWeek);
     }
   }
