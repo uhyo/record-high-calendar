@@ -7,7 +7,7 @@
 
 .dateDisplay {
   padding: 3px 0 10px;
-  font-size: 1.25rem;
+  font-size: min(1.25rem, 2vw);
   font-weight: 400;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .numberDisplay {
-  font-size: 2rem;
+  font-size: min(2rem, 3vw);
 }
 
 .rankDesc {
@@ -29,5 +29,30 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  font-size: clamp(8px, 1.25vw, 1rem);
   text-align: start;
+}
+
+@media (max-width: 900px) {
+  .day {
+    height: 3rem;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .dateDisplay {
+    width: 3rem;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .numberDisplay {
+    width: 4rem;
+    padding-right: 1rem;
+    text-align: end;
+    font-size: 1.3rem;
+  }
+  .rankDesc {
+    display: block;
+    font-size: 1rem;
+  }
 }

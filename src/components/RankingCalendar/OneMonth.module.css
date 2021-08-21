@@ -38,3 +38,27 @@
 .empty {
   background-color: var(--cell-empty-bg-color);
 }
+
+@media (max-width: 900px) {
+  .monthTitle {
+    margin: 0.25em 0;
+  }
+
+  .month {
+    row-gap: 3px;
+  }
+
+  .week {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 3px;
+  }
+
+  .day {
+    aspect-ratio: auto;
+  }
+
+  .empty {
+    display: none;
+  }
+}
