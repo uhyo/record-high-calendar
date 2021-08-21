@@ -1,29 +1,22 @@
 import { Rokuyou } from "../rokuyou";
 
 /**
- * Characteristic that expresses the week day of a day.
+ * Characteristic that expresses the week day of a day. (1 - 7)
  */
-export type WeekDayCharacteristic =
-  | "weekday:monday"
-  | "weekday:tuesday"
-  | "weekday:wednesday"
-  | "weekday:thursday"
-  | "weekday:friday"
-  | "weekday:saturday"
-  | "weekday:sunday";
+export type WeekDayCharacteristic = number;
 
 /**
  * Characteristic that expresses 六曜 of a day.
  */
-export type RokuyouCharacteristic = `rokuyou:${Rokuyou}`;
+export type RokuyouCharacteristic = Rokuyou;
 
 /** Characteristic that expresses the year of a day. */
-export type YearCharacteristic = `year:${number}`;
+export type YearCharacteristic = number;
 
 /**
  * Characteristic that expresses the month of a day. (1-12)
  */
-export type MonthCharacteristic = `month:${number}`;
+export type MonthCharacteristic = number;
 
 export type DayCharacteristic = {
   weekDay: WeekDayCharacteristic;

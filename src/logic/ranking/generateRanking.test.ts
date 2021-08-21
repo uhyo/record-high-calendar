@@ -43,548 +43,548 @@ Object {
       "count": 31,
       "rarity": 1,
     },
-    "-month:8--" => Object {
+    "-8--" => Object {
       "characteristic": Object {
-        "month": "month:8",
+        "month": 8,
       },
       "count": 31,
       "rarity": 12,
     },
-    "year:2021---" => Object {
+    "2021---" => Object {
       "characteristic": Object {
-        "year": "year:2021",
+        "year": 2021,
       },
       "count": 31,
       "rarity": 1.01,
     },
-    "year:2021-month:8--" => Object {
+    "2021-8--" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "year": "year:2021",
+        "month": 8,
+        "year": 2021,
       },
       "count": 31,
       "rarity": 12.120000000000001,
     },
-    "---rokuyou:仏滅" => Object {
+    "---仏滅" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:仏滅",
+        "rokuyou": "仏滅",
       },
       "count": 6,
       "rarity": 6,
     },
-    "-month:8--rokuyou:仏滅" => Object {
+    "-8--仏滅" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:仏滅",
+        "month": 8,
+        "rokuyou": "仏滅",
       },
       "count": 6,
       "rarity": 72,
     },
-    "year:2021---rokuyou:仏滅" => Object {
+    "2021---仏滅" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:仏滅",
-        "year": "year:2021",
+        "rokuyou": "仏滅",
+        "year": 2021,
       },
       "count": 6,
       "rarity": 6.0600000000000005,
     },
-    "year:2021-month:8--rokuyou:仏滅" => Object {
+    "2021-8--仏滅" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:仏滅",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "仏滅",
+        "year": 2021,
       },
       "count": 6,
       "rarity": 72.72,
     },
-    "--weekday:sunday-" => Object {
+    "--7-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:sunday",
+        "weekDay": 7,
       },
       "count": 5,
       "rarity": 7,
     },
-    "-month:8-weekday:sunday-" => Object {
+    "-8-7-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:sunday",
+        "month": 8,
+        "weekDay": 7,
       },
       "count": 5,
       "rarity": 84,
     },
-    "year:2021--weekday:sunday-" => Object {
+    "2021--7-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:sunday",
-        "year": "year:2021",
+        "weekDay": 7,
+        "year": 2021,
       },
       "count": 5,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:sunday-" => Object {
+    "2021-8-7-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:sunday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 7,
+        "year": 2021,
       },
       "count": 5,
       "rarity": 84.84,
     },
-    "--weekday:sunday-rokuyou:仏滅" => Object {
+    "--7-仏滅" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:仏滅",
-        "weekDay": "weekday:sunday",
+        "rokuyou": "仏滅",
+        "weekDay": 7,
       },
       "count": 2,
       "rarity": 42,
     },
-    "-month:8-weekday:sunday-rokuyou:仏滅" => Object {
+    "-8-7-仏滅" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:仏滅",
-        "weekDay": "weekday:sunday",
+        "month": 8,
+        "rokuyou": "仏滅",
+        "weekDay": 7,
       },
       "count": 2,
       "rarity": 504,
     },
-    "year:2021--weekday:sunday-rokuyou:仏滅" => Object {
+    "2021--7-仏滅" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:仏滅",
-        "weekDay": "weekday:sunday",
-        "year": "year:2021",
+        "rokuyou": "仏滅",
+        "weekDay": 7,
+        "year": 2021,
       },
       "count": 2,
       "rarity": 42.42,
     },
-    "year:2021-month:8-weekday:sunday-rokuyou:仏滅" => Object {
+    "2021-8-7-仏滅" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:仏滅",
-        "weekDay": "weekday:sunday",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "仏滅",
+        "weekDay": 7,
+        "year": 2021,
       },
       "count": 2,
       "rarity": 509.04,
     },
-    "---rokuyou:大安" => Object {
+    "---大安" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:大安",
+        "rokuyou": "大安",
       },
       "count": 5,
       "rarity": 6,
     },
-    "-month:8--rokuyou:大安" => Object {
+    "-8--大安" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:大安",
+        "month": 8,
+        "rokuyou": "大安",
       },
       "count": 5,
       "rarity": 72,
     },
-    "year:2021---rokuyou:大安" => Object {
+    "2021---大安" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:大安",
-        "year": "year:2021",
+        "rokuyou": "大安",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 6.0600000000000005,
     },
-    "year:2021-month:8--rokuyou:大安" => Object {
+    "2021-8--大安" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:大安",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "大安",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 72.72,
     },
-    "--weekday:monday-" => Object {
+    "--1-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:monday",
+        "weekDay": 1,
       },
       "count": 5,
       "rarity": 7,
     },
-    "-month:8-weekday:monday-" => Object {
+    "-8-1-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:monday",
+        "month": 8,
+        "weekDay": 1,
       },
       "count": 5,
       "rarity": 84,
     },
-    "year:2021--weekday:monday-" => Object {
+    "2021--1-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:monday",
-        "year": "year:2021",
+        "weekDay": 1,
+        "year": 2021,
       },
       "count": 5,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:monday-" => Object {
+    "2021-8-1-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:monday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 1,
+        "year": 2021,
       },
       "count": 5,
       "rarity": 84.84,
     },
-    "--weekday:monday-rokuyou:大安" => Object {
+    "--1-大安" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:大安",
-        "weekDay": "weekday:monday",
+        "rokuyou": "大安",
+        "weekDay": 1,
       },
       "count": 2,
       "rarity": 42,
     },
-    "-month:8-weekday:monday-rokuyou:大安" => Object {
+    "-8-1-大安" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:大安",
-        "weekDay": "weekday:monday",
+        "month": 8,
+        "rokuyou": "大安",
+        "weekDay": 1,
       },
       "count": 2,
       "rarity": 504,
     },
-    "year:2021--weekday:monday-rokuyou:大安" => Object {
+    "2021--1-大安" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:大安",
-        "weekDay": "weekday:monday",
-        "year": "year:2021",
+        "rokuyou": "大安",
+        "weekDay": 1,
+        "year": 2021,
       },
       "count": 2,
       "rarity": 42.42,
     },
-    "year:2021-month:8-weekday:monday-rokuyou:大安" => Object {
+    "2021-8-1-大安" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:大安",
-        "weekDay": "weekday:monday",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "大安",
+        "weekDay": 1,
+        "year": 2021,
       },
       "count": 2,
       "rarity": 509.04,
     },
-    "---rokuyou:赤口" => Object {
+    "---赤口" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:赤口",
+        "rokuyou": "赤口",
       },
       "count": 5,
       "rarity": 6,
     },
-    "-month:8--rokuyou:赤口" => Object {
+    "-8--赤口" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:赤口",
+        "month": 8,
+        "rokuyou": "赤口",
       },
       "count": 5,
       "rarity": 72,
     },
-    "year:2021---rokuyou:赤口" => Object {
+    "2021---赤口" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:赤口",
-        "year": "year:2021",
+        "rokuyou": "赤口",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 6.0600000000000005,
     },
-    "year:2021-month:8--rokuyou:赤口" => Object {
+    "2021-8--赤口" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:赤口",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "赤口",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 72.72,
     },
-    "--weekday:tuesday-" => Object {
+    "--2-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:tuesday",
+        "weekDay": 2,
       },
       "count": 5,
       "rarity": 7,
     },
-    "-month:8-weekday:tuesday-" => Object {
+    "-8-2-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:tuesday",
+        "month": 8,
+        "weekDay": 2,
       },
       "count": 5,
       "rarity": 84,
     },
-    "year:2021--weekday:tuesday-" => Object {
+    "2021--2-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:tuesday",
-        "year": "year:2021",
+        "weekDay": 2,
+        "year": 2021,
       },
       "count": 5,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:tuesday-" => Object {
+    "2021-8-2-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:tuesday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 2,
+        "year": 2021,
       },
       "count": 5,
       "rarity": 84.84,
     },
-    "--weekday:tuesday-rokuyou:赤口" => Object {
+    "--2-赤口" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:赤口",
-        "weekDay": "weekday:tuesday",
+        "rokuyou": "赤口",
+        "weekDay": 2,
       },
       "count": 2,
       "rarity": 42,
     },
-    "-month:8-weekday:tuesday-rokuyou:赤口" => Object {
+    "-8-2-赤口" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:赤口",
-        "weekDay": "weekday:tuesday",
+        "month": 8,
+        "rokuyou": "赤口",
+        "weekDay": 2,
       },
       "count": 2,
       "rarity": 504,
     },
-    "year:2021--weekday:tuesday-rokuyou:赤口" => Object {
+    "2021--2-赤口" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:赤口",
-        "weekDay": "weekday:tuesday",
-        "year": "year:2021",
+        "rokuyou": "赤口",
+        "weekDay": 2,
+        "year": 2021,
       },
       "count": 2,
       "rarity": 42.42,
     },
-    "year:2021-month:8-weekday:tuesday-rokuyou:赤口" => Object {
+    "2021-8-2-赤口" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:赤口",
-        "weekDay": "weekday:tuesday",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "赤口",
+        "weekDay": 2,
+        "year": 2021,
       },
       "count": 2,
       "rarity": 509.04,
     },
-    "---rokuyou:先勝" => Object {
+    "---先勝" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:先勝",
+        "rokuyou": "先勝",
       },
       "count": 5,
       "rarity": 6,
     },
-    "-month:8--rokuyou:先勝" => Object {
+    "-8--先勝" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:先勝",
+        "month": 8,
+        "rokuyou": "先勝",
       },
       "count": 5,
       "rarity": 72,
     },
-    "year:2021---rokuyou:先勝" => Object {
+    "2021---先勝" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:先勝",
-        "year": "year:2021",
+        "rokuyou": "先勝",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 6.0600000000000005,
     },
-    "year:2021-month:8--rokuyou:先勝" => Object {
+    "2021-8--先勝" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:先勝",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "先勝",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 72.72,
     },
-    "--weekday:wednesday-" => Object {
+    "--3-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:wednesday",
+        "weekDay": 3,
       },
       "count": 4,
       "rarity": 7,
     },
-    "-month:8-weekday:wednesday-" => Object {
+    "-8-3-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:wednesday",
+        "month": 8,
+        "weekDay": 3,
       },
       "count": 4,
       "rarity": 84,
     },
-    "year:2021--weekday:wednesday-" => Object {
+    "2021--3-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:wednesday",
-        "year": "year:2021",
+        "weekDay": 3,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:wednesday-" => Object {
+    "2021-8-3-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:wednesday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 3,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 84.84,
     },
-    "---rokuyou:友引" => Object {
+    "---友引" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:友引",
+        "rokuyou": "友引",
       },
       "count": 5,
       "rarity": 6,
     },
-    "-month:8--rokuyou:友引" => Object {
+    "-8--友引" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:友引",
+        "month": 8,
+        "rokuyou": "友引",
       },
       "count": 5,
       "rarity": 72,
     },
-    "year:2021---rokuyou:友引" => Object {
+    "2021---友引" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:友引",
-        "year": "year:2021",
+        "rokuyou": "友引",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 6.0600000000000005,
     },
-    "year:2021-month:8--rokuyou:友引" => Object {
+    "2021-8--友引" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:友引",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "友引",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 72.72,
     },
-    "--weekday:thursday-" => Object {
+    "--4-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:thursday",
+        "weekDay": 4,
       },
       "count": 4,
       "rarity": 7,
     },
-    "-month:8-weekday:thursday-" => Object {
+    "-8-4-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:thursday",
+        "month": 8,
+        "weekDay": 4,
       },
       "count": 4,
       "rarity": 84,
     },
-    "year:2021--weekday:thursday-" => Object {
+    "2021--4-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:thursday",
-        "year": "year:2021",
+        "weekDay": 4,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:thursday-" => Object {
+    "2021-8-4-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:thursday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 4,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 84.84,
     },
-    "---rokuyou:先負" => Object {
+    "---先負" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:先負",
+        "rokuyou": "先負",
       },
       "count": 5,
       "rarity": 6,
     },
-    "-month:8--rokuyou:先負" => Object {
+    "-8--先負" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:先負",
+        "month": 8,
+        "rokuyou": "先負",
       },
       "count": 5,
       "rarity": 72,
     },
-    "year:2021---rokuyou:先負" => Object {
+    "2021---先負" => Object {
       "characteristic": Object {
-        "rokuyou": "rokuyou:先負",
-        "year": "year:2021",
+        "rokuyou": "先負",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 6.0600000000000005,
     },
-    "year:2021-month:8--rokuyou:先負" => Object {
+    "2021-8--先負" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "rokuyou": "rokuyou:先負",
-        "year": "year:2021",
+        "month": 8,
+        "rokuyou": "先負",
+        "year": 2021,
       },
       "count": 5,
       "rarity": 72.72,
     },
-    "--weekday:friday-" => Object {
+    "--5-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:friday",
+        "weekDay": 5,
       },
       "count": 4,
       "rarity": 7,
     },
-    "-month:8-weekday:friday-" => Object {
+    "-8-5-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:friday",
+        "month": 8,
+        "weekDay": 5,
       },
       "count": 4,
       "rarity": 84,
     },
-    "year:2021--weekday:friday-" => Object {
+    "2021--5-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:friday",
-        "year": "year:2021",
+        "weekDay": 5,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:friday-" => Object {
+    "2021-8-5-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:friday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 5,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 84.84,
     },
-    "--weekday:saturday-" => Object {
+    "--6-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:saturday",
+        "weekDay": 6,
       },
       "count": 4,
       "rarity": 7,
     },
-    "-month:8-weekday:saturday-" => Object {
+    "-8-6-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:saturday",
+        "month": 8,
+        "weekDay": 6,
       },
       "count": 4,
       "rarity": 84,
     },
-    "year:2021--weekday:saturday-" => Object {
+    "2021--6-" => Object {
       "characteristic": Object {
-        "weekDay": "weekday:saturday",
-        "year": "year:2021",
+        "weekDay": 6,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 7.07,
     },
-    "year:2021-month:8-weekday:saturday-" => Object {
+    "2021-8-6-" => Object {
       "characteristic": Object {
-        "month": "month:8",
-        "weekDay": "weekday:saturday",
-        "year": "year:2021",
+        "month": 8,
+        "weekDay": 6,
+        "year": 2021,
       },
       "count": 4,
       "rarity": 84.84,
@@ -596,47 +596,47 @@ Object {
         "currentRank": 31,
         "thenRank": 13,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 31,
         "thenRank": 13,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 31,
         "thenRank": 13,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 31,
         "thenRank": 13,
       },
-      "---rokuyou:赤口" => Object {
+      "---赤口" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "-month:8--rokuyou:赤口" => Object {
+      "-8--赤口" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021---rokuyou:赤口" => Object {
+      "2021---赤口" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021-month:8--rokuyou:赤口" => Object {
+      "2021-8--赤口" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "--weekday:friday-" => Object {
+      "--5-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "-month:8-weekday:friday-" => Object {
+      "-8-5-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021--weekday:friday-" => Object {
+      "2021--5-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:friday-" => Object {
+      "2021-8-5-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
@@ -646,47 +646,47 @@ Object {
         "currentRank": 30,
         "thenRank": 8,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 30,
         "thenRank": 8,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 30,
         "thenRank": 8,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 30,
         "thenRank": 8,
       },
-      "--weekday:sunday-" => Object {
+      "--7-" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "-month:8-weekday:sunday-" => Object {
+      "-8-7-" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021--weekday:sunday-" => Object {
+      "2021--7-" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:sunday-" => Object {
+      "2021-8-7-" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "---rokuyou:先勝" => Object {
+      "---先勝" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "-month:8--rokuyou:先勝" => Object {
+      "-8--先勝" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021---rokuyou:先勝" => Object {
+      "2021---先勝" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021-month:8--rokuyou:先勝" => Object {
+      "2021-8--先勝" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
@@ -696,47 +696,47 @@ Object {
         "currentRank": 29,
         "thenRank": 19,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 29,
         "thenRank": 19,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 29,
         "thenRank": 19,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 29,
         "thenRank": 19,
       },
-      "---rokuyou:友引" => Object {
+      "---友引" => Object {
         "currentRank": 5,
         "thenRank": 4,
       },
-      "-month:8--rokuyou:友引" => Object {
+      "-8--友引" => Object {
         "currentRank": 5,
         "thenRank": 4,
       },
-      "year:2021---rokuyou:友引" => Object {
+      "2021---友引" => Object {
         "currentRank": 5,
         "thenRank": 4,
       },
-      "year:2021-month:8--rokuyou:友引" => Object {
+      "2021-8--友引" => Object {
         "currentRank": 5,
         "thenRank": 4,
       },
-      "--weekday:saturday-" => Object {
+      "--6-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "-month:8-weekday:saturday-" => Object {
+      "-8-6-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "year:2021--weekday:saturday-" => Object {
+      "2021--6-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:saturday-" => Object {
+      "2021-8-6-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
@@ -746,47 +746,47 @@ Object {
         "currentRank": 28,
         "thenRank": 23,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 28,
         "thenRank": 23,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 28,
         "thenRank": 23,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 28,
         "thenRank": 23,
       },
-      "---rokuyou:先勝" => Object {
+      "---先勝" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "-month:8--rokuyou:先勝" => Object {
+      "-8--先勝" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "year:2021---rokuyou:先勝" => Object {
+      "2021---先勝" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "year:2021-month:8--rokuyou:先勝" => Object {
+      "2021-8--先勝" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "--weekday:thursday-" => Object {
+      "--4-" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "-month:8-weekday:thursday-" => Object {
+      "-8-4-" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "year:2021--weekday:thursday-" => Object {
+      "2021--4-" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "year:2021-month:8-weekday:thursday-" => Object {
+      "2021-8-4-" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
@@ -796,63 +796,63 @@ Object {
         "currentRank": 27,
         "thenRank": 1,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 27,
         "thenRank": 1,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 27,
         "thenRank": 1,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 27,
         "thenRank": 1,
       },
-      "---rokuyou:仏滅" => Object {
+      "---仏滅" => Object {
         "currentRank": 6,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:仏滅" => Object {
+      "-8--仏滅" => Object {
         "currentRank": 6,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:仏滅" => Object {
+      "2021---仏滅" => Object {
         "currentRank": 6,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:仏滅" => Object {
+      "2021-8--仏滅" => Object {
         "currentRank": 6,
         "thenRank": 1,
       },
-      "--weekday:sunday-" => Object {
+      "--7-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "-month:8-weekday:sunday-" => Object {
+      "-8-7-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021--weekday:sunday-" => Object {
+      "2021--7-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:sunday-" => Object {
+      "2021-8-7-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "--weekday:sunday-rokuyou:仏滅" => Object {
+      "--7-仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8-weekday:sunday-rokuyou:仏滅" => Object {
+      "-8-7-仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021--weekday:sunday-rokuyou:仏滅" => Object {
+      "2021--7-仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:sunday-rokuyou:仏滅" => Object {
+      "2021-8-7-仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -862,47 +862,47 @@ Object {
         "currentRank": 26,
         "thenRank": 6,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 26,
         "thenRank": 6,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 26,
         "thenRank": 6,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 26,
         "thenRank": 6,
       },
-      "---rokuyou:仏滅" => Object {
+      "---仏滅" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:仏滅" => Object {
+      "-8--仏滅" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:仏滅" => Object {
+      "2021---仏滅" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:仏滅" => Object {
+      "2021-8--仏滅" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "--weekday:saturday-" => Object {
+      "--6-" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "-month:8-weekday:saturday-" => Object {
+      "-8-6-" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021--weekday:saturday-" => Object {
+      "2021--6-" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:saturday-" => Object {
+      "2021-8-6-" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
@@ -912,63 +912,63 @@ Object {
         "currentRank": 25,
         "thenRank": 2,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 25,
         "thenRank": 2,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 25,
         "thenRank": 2,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 25,
         "thenRank": 2,
       },
-      "---rokuyou:赤口" => Object {
+      "---赤口" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:赤口" => Object {
+      "-8--赤口" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:赤口" => Object {
+      "2021---赤口" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:赤口" => Object {
+      "2021-8--赤口" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "--weekday:tuesday-" => Object {
+      "--2-" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "-month:8-weekday:tuesday-" => Object {
+      "-8-2-" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "year:2021--weekday:tuesday-" => Object {
+      "2021--2-" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:tuesday-" => Object {
+      "2021-8-2-" => Object {
         "currentRank": 5,
         "thenRank": 1,
       },
-      "--weekday:tuesday-rokuyou:赤口" => Object {
+      "--2-赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8-weekday:tuesday-rokuyou:赤口" => Object {
+      "-8-2-赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021--weekday:tuesday-rokuyou:赤口" => Object {
+      "2021--2-赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:tuesday-rokuyou:赤口" => Object {
+      "2021-8-2-赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -978,47 +978,47 @@ Object {
         "currentRank": 24,
         "thenRank": 8,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 24,
         "thenRank": 8,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 24,
         "thenRank": 8,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 24,
         "thenRank": 8,
       },
-      "---rokuyou:大安" => Object {
+      "---大安" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "-month:8--rokuyou:大安" => Object {
+      "-8--大安" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021---rokuyou:大安" => Object {
+      "2021---大安" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "year:2021-month:8--rokuyou:大安" => Object {
+      "2021-8--大安" => Object {
         "currentRank": 5,
         "thenRank": 2,
       },
-      "--weekday:thursday-" => Object {
+      "--4-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
-      "-month:8-weekday:thursday-" => Object {
+      "-8-4-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
-      "year:2021--weekday:thursday-" => Object {
+      "2021--4-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:thursday-" => Object {
+      "2021-8-4-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
@@ -1028,47 +1028,47 @@ Object {
         "currentRank": 23,
         "thenRank": 3,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 23,
         "thenRank": 3,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 23,
         "thenRank": 3,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 23,
         "thenRank": 3,
       },
-      "---rokuyou:友引" => Object {
+      "---友引" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:友引" => Object {
+      "-8--友引" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:友引" => Object {
+      "2021---友引" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:友引" => Object {
+      "2021-8--友引" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "--weekday:thursday-" => Object {
+      "--4-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8-weekday:thursday-" => Object {
+      "-8-4-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021--weekday:thursday-" => Object {
+      "2021--4-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:thursday-" => Object {
+      "2021-8-4-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -1078,63 +1078,63 @@ Object {
         "currentRank": 22,
         "thenRank": 20,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 22,
         "thenRank": 20,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 22,
         "thenRank": 20,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 22,
         "thenRank": 20,
       },
-      "---rokuyou:仏滅" => Object {
+      "---仏滅" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "-month:8--rokuyou:仏滅" => Object {
+      "-8--仏滅" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "year:2021---rokuyou:仏滅" => Object {
+      "2021---仏滅" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "year:2021-month:8--rokuyou:仏滅" => Object {
+      "2021-8--仏滅" => Object {
         "currentRank": 4,
         "thenRank": 4,
       },
-      "--weekday:sunday-" => Object {
+      "--7-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8-weekday:sunday-" => Object {
+      "-8-7-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021--weekday:sunday-" => Object {
+      "2021--7-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:sunday-" => Object {
+      "2021-8-7-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "--weekday:sunday-rokuyou:仏滅" => Object {
+      "--7-仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:sunday-rokuyou:仏滅" => Object {
+      "-8-7-仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:sunday-rokuyou:仏滅" => Object {
+      "2021--7-仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:sunday-rokuyou:仏滅" => Object {
+      "2021-8-7-仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -1144,47 +1144,47 @@ Object {
         "currentRank": 21,
         "thenRank": 9,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 21,
         "thenRank": 9,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 21,
         "thenRank": 9,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 21,
         "thenRank": 9,
       },
-      "--weekday:monday-" => Object {
+      "--1-" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "-month:8-weekday:monday-" => Object {
+      "-8-1-" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "year:2021--weekday:monday-" => Object {
+      "2021--1-" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:monday-" => Object {
+      "2021-8-1-" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "---rokuyou:先負" => Object {
+      "---先負" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "-month:8--rokuyou:先負" => Object {
+      "-8--先負" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "year:2021---rokuyou:先負" => Object {
+      "2021---先負" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
-      "year:2021-month:8--rokuyou:先負" => Object {
+      "2021-8--先負" => Object {
         "currentRank": 5,
         "thenRank": 3,
       },
@@ -1194,47 +1194,47 @@ Object {
         "currentRank": 20,
         "thenRank": 12,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 20,
         "thenRank": 12,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 20,
         "thenRank": 12,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 20,
         "thenRank": 12,
       },
-      "---rokuyou:先勝" => Object {
+      "---先勝" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8--rokuyou:先勝" => Object {
+      "-8--先勝" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021---rokuyou:先勝" => Object {
+      "2021---先勝" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8--rokuyou:先勝" => Object {
+      "2021-8--先勝" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "--weekday:friday-" => Object {
+      "--5-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
-      "-month:8-weekday:friday-" => Object {
+      "-8-5-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
-      "year:2021--weekday:friday-" => Object {
+      "2021--5-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:friday-" => Object {
+      "2021-8-5-" => Object {
         "currentRank": 3,
         "thenRank": 2,
       },
@@ -1244,47 +1244,47 @@ Object {
         "currentRank": 19,
         "thenRank": 12,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 19,
         "thenRank": 12,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 19,
         "thenRank": 12,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 19,
         "thenRank": 12,
       },
-      "--weekday:sunday-" => Object {
+      "--7-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "-month:8-weekday:sunday-" => Object {
+      "-8-7-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021--weekday:sunday-" => Object {
+      "2021--7-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:sunday-" => Object {
+      "2021-8-7-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "---rokuyou:先負" => Object {
+      "---先負" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "-month:8--rokuyou:先負" => Object {
+      "-8--先負" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "year:2021---rokuyou:先負" => Object {
+      "2021---先負" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "year:2021-month:8--rokuyou:先負" => Object {
+      "2021-8--先負" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
@@ -1294,47 +1294,47 @@ Object {
         "currentRank": 18,
         "thenRank": 10,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 18,
         "thenRank": 10,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 18,
         "thenRank": 10,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 18,
         "thenRank": 10,
       },
-      "---rokuyou:大安" => Object {
+      "---大安" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "-month:8--rokuyou:大安" => Object {
+      "-8--大安" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021---rokuyou:大安" => Object {
+      "2021---大安" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021-month:8--rokuyou:大安" => Object {
+      "2021-8--大安" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "--weekday:wednesday-" => Object {
+      "--3-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "-month:8-weekday:wednesday-" => Object {
+      "-8-3-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "year:2021--weekday:wednesday-" => Object {
+      "2021--3-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:wednesday-" => Object {
+      "2021-8-3-" => Object {
         "currentRank": 4,
         "thenRank": 3,
       },
@@ -1344,47 +1344,47 @@ Object {
         "currentRank": 17,
         "thenRank": 3,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 17,
         "thenRank": 3,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 17,
         "thenRank": 3,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 17,
         "thenRank": 3,
       },
-      "---rokuyou:先負" => Object {
+      "---先負" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:先負" => Object {
+      "-8--先負" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:先負" => Object {
+      "2021---先負" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:先負" => Object {
+      "2021-8--先負" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "--weekday:friday-" => Object {
+      "--5-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8-weekday:friday-" => Object {
+      "-8-5-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021--weekday:friday-" => Object {
+      "2021--5-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:friday-" => Object {
+      "2021-8-5-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -1394,47 +1394,47 @@ Object {
         "currentRank": 16,
         "thenRank": 3,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 16,
         "thenRank": 3,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 16,
         "thenRank": 3,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 16,
         "thenRank": 3,
       },
-      "--weekday:monday-" => Object {
+      "--1-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "-month:8-weekday:monday-" => Object {
+      "-8-1-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021--weekday:monday-" => Object {
+      "2021--1-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:monday-" => Object {
+      "2021-8-1-" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "---rokuyou:友引" => Object {
+      "---友引" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:友引" => Object {
+      "-8--友引" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:友引" => Object {
+      "2021---友引" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:友引" => Object {
+      "2021-8--友引" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
@@ -1444,47 +1444,47 @@ Object {
         "currentRank": 15,
         "thenRank": 8,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 15,
         "thenRank": 8,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 15,
         "thenRank": 8,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 15,
         "thenRank": 8,
       },
-      "---rokuyou:赤口" => Object {
+      "---赤口" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:赤口" => Object {
+      "-8--赤口" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:赤口" => Object {
+      "2021---赤口" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:赤口" => Object {
+      "2021-8--赤口" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "--weekday:thursday-" => Object {
+      "--4-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:thursday-" => Object {
+      "-8-4-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:thursday-" => Object {
+      "2021--4-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:thursday-" => Object {
+      "2021-8-4-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -1494,47 +1494,47 @@ Object {
         "currentRank": 14,
         "thenRank": 10,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 14,
         "thenRank": 10,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 14,
         "thenRank": 10,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 14,
         "thenRank": 10,
       },
-      "---rokuyou:赤口" => Object {
+      "---赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:赤口" => Object {
+      "-8--赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:赤口" => Object {
+      "2021---赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:赤口" => Object {
+      "2021-8--赤口" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "--weekday:wednesday-" => Object {
+      "--3-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8-weekday:wednesday-" => Object {
+      "-8-3-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021--weekday:wednesday-" => Object {
+      "2021--3-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:wednesday-" => Object {
+      "2021-8-3-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
@@ -1544,47 +1544,47 @@ Object {
         "currentRank": 13,
         "thenRank": 3,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 13,
         "thenRank": 3,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 13,
         "thenRank": 3,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 13,
         "thenRank": 3,
       },
-      "--weekday:tuesday-" => Object {
+      "--2-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "-month:8-weekday:tuesday-" => Object {
+      "-8-2-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021--weekday:tuesday-" => Object {
+      "2021--2-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:tuesday-" => Object {
+      "2021-8-2-" => Object {
         "currentRank": 4,
         "thenRank": 1,
       },
-      "---rokuyou:先負" => Object {
+      "---先負" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:先負" => Object {
+      "-8--先負" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:先負" => Object {
+      "2021---先負" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:先負" => Object {
+      "2021-8--先負" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -1594,63 +1594,63 @@ Object {
         "currentRank": 12,
         "thenRank": 11,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 12,
         "thenRank": 11,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 12,
         "thenRank": 11,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 12,
         "thenRank": 11,
       },
-      "---rokuyou:大安" => Object {
+      "---大安" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8--rokuyou:大安" => Object {
+      "-8--大安" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021---rokuyou:大安" => Object {
+      "2021---大安" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8--rokuyou:大安" => Object {
+      "2021-8--大安" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "--weekday:monday-" => Object {
+      "--1-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8-weekday:monday-" => Object {
+      "-8-1-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021--weekday:monday-" => Object {
+      "2021--1-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:monday-" => Object {
+      "2021-8-1-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "--weekday:monday-rokuyou:大安" => Object {
+      "--1-大安" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "-month:8-weekday:monday-rokuyou:大安" => Object {
+      "-8-1-大安" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021--weekday:monday-rokuyou:大安" => Object {
+      "2021--1-大安" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:monday-rokuyou:大安" => Object {
+      "2021-8-1-大安" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
@@ -1660,47 +1660,47 @@ Object {
         "currentRank": 11,
         "thenRank": 10,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 11,
         "thenRank": 10,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 11,
         "thenRank": 10,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 11,
         "thenRank": 10,
       },
-      "---rokuyou:先負" => Object {
+      "---先負" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:先負" => Object {
+      "-8--先負" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:先負" => Object {
+      "2021---先負" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:先負" => Object {
+      "2021-8--先負" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:saturday-" => Object {
+      "--6-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "-month:8-weekday:saturday-" => Object {
+      "-8-6-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021--weekday:saturday-" => Object {
+      "2021--6-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:saturday-" => Object {
+      "2021-8-6-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
@@ -1710,47 +1710,47 @@ Object {
         "currentRank": 10,
         "thenRank": 5,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 10,
         "thenRank": 5,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 10,
         "thenRank": 5,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 10,
         "thenRank": 5,
       },
-      "--weekday:sunday-" => Object {
+      "--7-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:sunday-" => Object {
+      "-8-7-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:sunday-" => Object {
+      "2021--7-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:sunday-" => Object {
+      "2021-8-7-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "---rokuyou:友引" => Object {
+      "---友引" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:友引" => Object {
+      "-8--友引" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:友引" => Object {
+      "2021---友引" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:友引" => Object {
+      "2021-8--友引" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -1760,47 +1760,47 @@ Object {
         "currentRank": 9,
         "thenRank": 6,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 9,
         "thenRank": 6,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 9,
         "thenRank": 6,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 9,
         "thenRank": 6,
       },
-      "---rokuyou:仏滅" => Object {
+      "---仏滅" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8--rokuyou:仏滅" => Object {
+      "-8--仏滅" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021---rokuyou:仏滅" => Object {
+      "2021---仏滅" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8--rokuyou:仏滅" => Object {
+      "2021-8--仏滅" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "--weekday:monday-" => Object {
+      "--1-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "-month:8-weekday:monday-" => Object {
+      "-8-1-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021--weekday:monday-" => Object {
+      "2021--1-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021-month:8-weekday:monday-" => Object {
+      "2021-8-1-" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
@@ -1810,63 +1810,63 @@ Object {
         "currentRank": 8,
         "thenRank": 8,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 8,
         "thenRank": 8,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 8,
         "thenRank": 8,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 8,
         "thenRank": 8,
       },
-      "---rokuyou:赤口" => Object {
+      "---赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:赤口" => Object {
+      "-8--赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:赤口" => Object {
+      "2021---赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:赤口" => Object {
+      "2021-8--赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:tuesday-" => Object {
+      "--2-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "-month:8-weekday:tuesday-" => Object {
+      "-8-2-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021--weekday:tuesday-" => Object {
+      "2021--2-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "year:2021-month:8-weekday:tuesday-" => Object {
+      "2021-8-2-" => Object {
         "currentRank": 3,
         "thenRank": 3,
       },
-      "--weekday:tuesday-rokuyou:赤口" => Object {
+      "--2-赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:tuesday-rokuyou:赤口" => Object {
+      "-8-2-赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:tuesday-rokuyou:赤口" => Object {
+      "2021--2-赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:tuesday-rokuyou:赤口" => Object {
+      "2021-8-2-赤口" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -1876,47 +1876,47 @@ Object {
         "currentRank": 7,
         "thenRank": 4,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 7,
         "thenRank": 4,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 7,
         "thenRank": 4,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 7,
         "thenRank": 4,
       },
-      "---rokuyou:先勝" => Object {
+      "---先勝" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "-month:8--rokuyou:先勝" => Object {
+      "-8--先勝" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021---rokuyou:先勝" => Object {
+      "2021---先勝" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "year:2021-month:8--rokuyou:先勝" => Object {
+      "2021-8--先勝" => Object {
         "currentRank": 2,
         "thenRank": 2,
       },
-      "--weekday:saturday-" => Object {
+      "--6-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:saturday-" => Object {
+      "-8-6-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:saturday-" => Object {
+      "2021--6-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:saturday-" => Object {
+      "2021-8-6-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -1926,47 +1926,47 @@ Object {
         "currentRank": 6,
         "thenRank": 2,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 6,
         "thenRank": 2,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 6,
         "thenRank": 2,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 6,
         "thenRank": 2,
       },
-      "---rokuyou:先勝" => Object {
+      "---先勝" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:先勝" => Object {
+      "-8--先勝" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:先勝" => Object {
+      "2021---先勝" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:先勝" => Object {
+      "2021-8--先勝" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:wednesday-" => Object {
+      "--3-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8-weekday:wednesday-" => Object {
+      "-8-3-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021--weekday:wednesday-" => Object {
+      "2021--3-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:wednesday-" => Object {
+      "2021-8-3-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -1976,47 +1976,47 @@ Object {
         "currentRank": 5,
         "thenRank": 5,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 5,
         "thenRank": 5,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 5,
         "thenRank": 5,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 5,
         "thenRank": 5,
       },
-      "---rokuyou:友引" => Object {
+      "---友引" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:友引" => Object {
+      "-8--友引" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:友引" => Object {
+      "2021---友引" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:友引" => Object {
+      "2021-8--友引" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:friday-" => Object {
+      "--5-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:friday-" => Object {
+      "-8-5-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:friday-" => Object {
+      "2021--5-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:friday-" => Object {
+      "2021-8-5-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -2026,47 +2026,47 @@ Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 4,
         "thenRank": 2,
       },
-      "---rokuyou:仏滅" => Object {
+      "---仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:仏滅" => Object {
+      "-8--仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:仏滅" => Object {
+      "2021---仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:仏滅" => Object {
+      "2021-8--仏滅" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "--weekday:wednesday-" => Object {
+      "--3-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:wednesday-" => Object {
+      "-8-3-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:wednesday-" => Object {
+      "2021--3-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:wednesday-" => Object {
+      "2021-8-3-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -2076,63 +2076,63 @@ Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 3,
         "thenRank": 1,
       },
-      "---rokuyou:大安" => Object {
+      "---大安" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:大安" => Object {
+      "-8--大安" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:大安" => Object {
+      "2021---大安" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:大安" => Object {
+      "2021-8--大安" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "--weekday:monday-" => Object {
+      "--1-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:monday-" => Object {
+      "-8-1-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:monday-" => Object {
+      "2021--1-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:monday-" => Object {
+      "2021-8-1-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:monday-rokuyou:大安" => Object {
+      "--1-大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:monday-rokuyou:大安" => Object {
+      "-8-1-大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:monday-rokuyou:大安" => Object {
+      "2021--1-大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:monday-rokuyou:大安" => Object {
+      "2021-8-1-大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
@@ -2142,47 +2142,47 @@ Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "---rokuyou:仏滅" => Object {
+      "---仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:仏滅" => Object {
+      "-8--仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:仏滅" => Object {
+      "2021---仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:仏滅" => Object {
+      "2021-8--仏滅" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:tuesday-" => Object {
+      "--2-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "-month:8-weekday:tuesday-" => Object {
+      "-8-2-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021--weekday:tuesday-" => Object {
+      "2021--2-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:tuesday-" => Object {
+      "2021-8-2-" => Object {
         "currentRank": 2,
         "thenRank": 1,
       },
@@ -2192,47 +2192,47 @@ Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--" => Object {
+      "-8--" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---" => Object {
+      "2021---" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--" => Object {
+      "2021-8--" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "---rokuyou:大安" => Object {
+      "---大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8--rokuyou:大安" => Object {
+      "-8--大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021---rokuyou:大安" => Object {
+      "2021---大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8--rokuyou:大安" => Object {
+      "2021-8--大安" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "--weekday:tuesday-" => Object {
+      "--2-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "-month:8-weekday:tuesday-" => Object {
+      "-8-2-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021--weekday:tuesday-" => Object {
+      "2021--2-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },
-      "year:2021-month:8-weekday:tuesday-" => Object {
+      "2021-8-2-" => Object {
         "currentRank": 1,
         "thenRank": 1,
       },

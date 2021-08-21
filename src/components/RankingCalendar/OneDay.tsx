@@ -1,5 +1,6 @@
 import { Temporal } from "@js-temporal/polyfill";
 import React, { useMemo } from "react";
+import { getCharacteristicDesc } from "../../logic/characteristics/getCharacteristicDesc";
 import { CharacteristicRevMap } from "../../logic/ranking/Ranking";
 import { classList } from "../../utils/classList";
 import classes from "./OneDay.module.css";
@@ -25,6 +26,27 @@ export const OneDay: React.FC<Props> = ({ day, characteristicRevMap }) => {
   const isSaturday = day.day.dayOfWeek === 6;
   const isSunday = day.day.dayOfWeek === 7;
 
+  const rankDesc = useMemo(() => {
+    if (!rank) {
+      return undefined;
+    }
+    const desc = getCharacteristicDesc(rank.characteristic.characteristic);
+    const desc1 = desc ? `${desc}では` : "";
+    const desc2 =
+      rank.currentRank === 1
+        ? "過去最高"
+        : `${!desc1 ? "過去" : ""}${rank.currentRank}位`;
+    const subDesc =
+      rank.currentRank <= rank.thenRank
+        ? undefined
+        : `（当時${rank.thenRank}位）`;
+    return {
+      text: `${desc1}${desc2}`,
+      isTop: rank.currentRank === 1,
+      subDesc,
+    };
+  }, [rank]);
+
   return (
     <div className={classes.day}>
       <span
@@ -36,6 +58,12 @@ export const OneDay: React.FC<Props> = ({ day, characteristicRevMap }) => {
       >
         {day.day.day}
       </span>
+      {rankDesc && (
+        <p>
+          {rankDesc.isTop ? <strong>{rankDesc.text}</strong> : rankDesc.text}
+          {rankDesc.subDesc && <small>{rankDesc.subDesc}</small>}
+        </p>
+      )}
     </div>
   );
 };
