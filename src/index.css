@@ -1,12 +1,26 @@
 :root {
   --bg-color: #f5f5f5;
   --fg-color: #333;
+  --h1-bg-color: #fff;
+  --h1-fg-color: #333;
+  --cell-bg-color: #fff;
+  --cell-fg-color: #333;
+  --cell-empty-bg-color: #ccc;
+  --sunday-color: #f00;
+  --saturday-color: #00f;
 }
 
-@media (prefer-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #333;
     --fg-color: #fff;
+    --h1-bg-color: #555;
+    --h1-fg-color: #fff;
+    --cell-bg-color: #222;
+    --cell-fg-color: #eee;
+    --cell-empty-bg-color: #444;
+    --sunday-color: #f77;
+    --saturday-color: #9af;
   }
 }
 

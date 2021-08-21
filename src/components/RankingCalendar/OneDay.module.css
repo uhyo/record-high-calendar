@@ -12,11 +12,11 @@
 }
 
 .sunday {
-  color: #ff0000;
+  color: var(--sunday-color);
 }
 
 .saturday {
-  color: #0000ff;
+  color: var(--saturday-color);
 }
 
 .numberDisplay {
@@ -25,7 +25,7 @@
 
 .rankDesc {
   flex: 50% 1 0;
-  padding: 2px;
+  padding: 2px 5px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

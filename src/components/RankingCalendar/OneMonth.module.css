@@ -1,8 +1,11 @@
 .monthTitle {
+  max-width: 1260px;
+  margin: 1em auto;
   padding: 0.25rem;
   font-size: 1.5em;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: var(--h1-bg-color);
+  color: var(--h1-fg-color);
 }
 
 .month {
@@ -28,9 +31,10 @@
   justify-content: center;
   align-items: center;
   aspect-ratio: 1 / 1;
-  background-color: #ffffff;
+  background-color: var(--cell-bg-color);
+  color: var(--cell-fg-color);
 }
 
 .empty {
-  background-color: #cccccc;
+  background-color: var(--cell-empty-bg-color);
 }
