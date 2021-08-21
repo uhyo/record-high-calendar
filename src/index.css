@@ -6,6 +6,7 @@
   --cell-bg-color: #fff;
   --cell-fg-color: #333;
   --cell-empty-bg-color: #ccc;
+  --skeleton-color: #eee;
   --sunday-color: #f00;
   --saturday-color: #00f;
 }
@@ -19,6 +20,7 @@
     --cell-bg-color: #222;
     --cell-fg-color: #eee;
     --cell-empty-bg-color: #444;
+    --skeleton-color: #393939;
     --sunday-color: #f77;
     --saturday-color: #9af;
   }

@@ -35,20 +35,27 @@ export function toCalendarMonths<T extends { day: Temporal.PlainDate }>(
         weeks: [],
       };
     }
-    let currentDay = objYearMonth.toPlainDate({ day: 1 });
+
     let currentWeek: (T | undefined)[] = [];
-    const firstDayWeek = weekConv[currentDay.dayOfWeek] ?? 0;
+
+    const firstDay = objYearMonth.toPlainDate({ day: 1 });
+    const firstDayWeek = weekConv[firstDay.dayOfWeek] ?? 0;
     for (const _ of range(0, firstDayWeek)) {
       currentWeek.push(undefined);
     }
 
-    while (objYearMonth.equals(currentDay.toPlainYearMonth())) {
+    for (const day of range(1, objYearMonth.daysInMonth + 1)) {
       const nextData = data[index];
       if (currentWeek.length === 7) {
         currentMonth.weeks.push(currentWeek);
         currentWeek = [];
       }
-      if (nextData?.day.equals(currentDay)) {
+      if (
+        nextData &&
+        nextData.day.year === objYearMonth.year &&
+        nextData.day.month === objYearMonth.month &&
+        nextData.day.day === day
+      ) {
         // has data
         currentWeek.push(nextData);
         index++;
@@ -56,7 +63,6 @@ export function toCalendarMonths<T extends { day: Temporal.PlainDate }>(
         // no data
         currentWeek.push(undefined);
       }
-      currentDay = currentDay.add({ days: 1 });
     }
     if (currentWeek.length > 0) {
       while (currentWeek.length < 7) {

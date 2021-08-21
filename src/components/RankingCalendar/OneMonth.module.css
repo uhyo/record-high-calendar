@@ -1,11 +1,25 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
 .monthTitle {
+  width: 100%;
   max-width: 1260px;
+  height: 2rem;
   margin: 1em auto;
   padding: 0.25rem;
   font-size: 1.5em;
   font-weight: bold;
   background-color: var(--h1-bg-color);
   color: var(--h1-fg-color);
+}
+
+.monthSkeleton {
+  flex: auto 1 0;
+  background-color: var(--skeleton-color);
 }
 
 .month {
@@ -37,6 +51,13 @@
 
 .empty {
   background-color: var(--cell-empty-bg-color);
+}
+
+@media (min-width: 901px) {
+  .section {
+    height: var(--calendar-table-height);
+    contain: size layout paint;
+  }
 }
 
 @media (max-width: 900px) {

@@ -1,5 +1,6 @@
 import { Temporal } from "@js-temporal/polyfill";
-import React, { useMemo } from "react";
+import React, { startTransition, useEffect, useMemo } from "react";
+import { render } from "react-dom";
 import { RankingCalculationResult } from "../../logic/ranking/Ranking";
 import { Loadable } from "../../utils/Loadable";
 import { toCalendarMonths } from "./logic/toCalendarMonths";
@@ -11,13 +12,12 @@ type Props = {
 
 export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
   const result = rankingLoadable.getOrThrow();
-  if (result === undefined) {
-    return null;
-  }
-
-  const { ranking, characteristicRevMap } = result;
 
   const months = useMemo(() => {
+    if (result === undefined) {
+      return undefined;
+    }
+    const { ranking } = result;
     const sortedRanking = Array.from(ranking.entries())
       .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
       .map(([date, rankings]) => ({
@@ -26,17 +26,36 @@ export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
         ranks: rankings.ranks,
       }));
     return toCalendarMonths(sortedRanking);
-  }, [ranking]);
+  }, [result]);
+
+  // two-step rendering: first render last month only for faster initial rendering
+  const [renderingMode, setRenderingMode] = React.useState<"full" | "last">(
+    "last"
+  );
+  useEffect(() => {
+    if (months !== undefined && renderingMode === "last") {
+      startTransition(() => {
+        setRenderingMode("full");
+      });
+    }
+  }, [months, render]);
+
+  console.log({ renderingMode });
 
   return (
     <div>
-      {months.map((month) => (
-        <OneMonth
-          key={month.month.toString()}
-          month={month}
-          characteristicRevMap={characteristicRevMap}
-        />
-      ))}
+      {months &&
+        result &&
+        months.map((month, index) => (
+          <OneMonth
+            key={month.month.toString()}
+            renderDetail={
+              renderingMode === "full" || index === months.length - 1
+            }
+            month={month}
+            characteristicRevMap={result.characteristicRevMap}
+          />
+        ))}
     </div>
   );
 };
