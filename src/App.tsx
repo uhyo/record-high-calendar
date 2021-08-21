@@ -1,11 +1,12 @@
 import React, { Suspense, useCallback } from "react";
 import classes from "./App.module.css";
 import { DataInput } from "./components/DataInput";
+import { LoadingIndicator } from "./components/LoadingIndicator";
 import { RankingCalendar } from "./components/RankingCalendar";
 import { useRanking } from "./hooks/useRanking";
 
 function App() {
-  const { ranking, calculateRanking } = useRanking();
+  const { ranking, pending, calculateRanking } = useRanking();
   const onChange = useCallback(
     (data: string) => {
       calculateRanking(data);
@@ -20,10 +21,14 @@ function App() {
           <h1>過去最高カレンダー</h1>
         </header>
         <main className={classes.main}>
-          <DataInput onChange={onChange} />
+          <DataInput onChange={onChange} changeDisabled={pending} />
           <hr className={classes.separator} />
           <div aria-live="polite">
-            <RankingCalendar rankingLoadable={ranking} />
+            {pending ? (
+              <LoadingIndicator />
+            ) : (
+              <RankingCalendar rankingLoadable={ranking} />
+            )}
           </div>
         </main>
       </Suspense>

@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useTransition } from "react";
 import type { RankingCalculationResult } from "../../logic/ranking/Ranking";
 import { Loadable } from "../../utils/Loadable";
 import Worker from "./worker?worker";
@@ -17,10 +17,12 @@ type WorkerResponse =
 
 type UseRankingResult = {
   ranking: Loadable<RankingCalculationResult | undefined>;
+  pending: boolean;
   calculateRanking: (data: string) => void;
 };
 
 export function useRanking(): UseRankingResult {
+  const [pending, startTransition] = useTransition();
   const [rankingWorker] = useState<Worker>(() => new Worker());
 
   const [ranking, setRanking] = useState<
@@ -35,31 +37,34 @@ export function useRanking(): UseRankingResult {
     };
     console.info("request", message);
     rankingWorker.postMessage(message);
-    setRanking(
-      new Loadable(
-        new Promise((resolve, reject) => {
-          const handler = (ev: MessageEvent) => {
-            const data: WorkerResponse = ev.data;
-            if (data.requestId !== requestId) {
-              return;
-            }
-            console.info("response", data);
-            if (data.success) {
-              resolve(data.result);
-            } else {
-              reject(data.error);
-            }
+    startTransition(() => {
+      setRanking(
+        new Loadable(
+          new Promise((resolve, reject) => {
+            const handler = (ev: MessageEvent) => {
+              const data: WorkerResponse = ev.data;
+              if (data.requestId !== requestId) {
+                return;
+              }
+              console.info("response", data);
+              if (data.success) {
+                resolve(data.result);
+              } else {
+                reject(data.error);
+              }
 
-            rankingWorker.removeEventListener("message", handler);
-          };
-          rankingWorker.addEventListener("message", handler);
-        })
-      )
-    );
+              rankingWorker.removeEventListener("message", handler);
+            };
+            rankingWorker.addEventListener("message", handler);
+          })
+        )
+      );
+    });
   }, []);
 
   return {
     ranking,
+    pending,
     calculateRanking,
   };
 }

@@ -1,0 +1,14 @@
+.indicator {
+  width: 100%;
+  height: 2em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: var(--h1-bg-color);
+  color: var(--h1-fg-color);
+  text-align: center;
+}
