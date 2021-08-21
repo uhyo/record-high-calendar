@@ -1,0 +1,20 @@
+.day {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.dateDisplay {
+  flex: 50% 0 1;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sunday {
+  color: #ff0000;
+}
+
+.saturday {
+  color: #0000ff;
+}

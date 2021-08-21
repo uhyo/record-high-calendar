@@ -13,14 +13,16 @@ export type Ranking = Map<
   >
 >;
 
+export type CharacteristicRevMap = Map<
+  string,
+  {
+    rarity: number;
+    count: number;
+    characteristic: Partial<DayCharacteristic>;
+  }
+>;
+
 export type RankingCalculationResult = {
   ranking: Ranking;
-  characteristicRevMap: Map<
-    string,
-    {
-      rarity: number;
-      count: number;
-      characteristic: Partial<DayCharacteristic>;
-    }
-  >;
+  characteristicRevMap: CharacteristicRevMap;
 };

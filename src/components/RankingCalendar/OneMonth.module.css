@@ -1,0 +1,35 @@
+.monthtitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.month {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+.day {
+  flex: 0px 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background-color: #ffffff;
+}
+
+.empty {
+  background-color: #cccccc;
+}

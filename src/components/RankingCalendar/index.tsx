@@ -3,6 +3,7 @@ import React, { useMemo } from "react";
 import { RankingCalculationResult } from "../../logic/ranking/Ranking";
 import { Loadable } from "../../utils/Loadable";
 import { toCalendarMonths } from "./logic/toCalendarMonths";
+import { OneMonth } from "./OneMonth";
 
 type Props = {
   rankingLoadable: Loadable<RankingCalculationResult | undefined>;
@@ -26,5 +27,15 @@ export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
     return toCalendarMonths(sortedRanking);
   }, [ranking]);
 
-  return <div>{String(months)}</div>;
+  return (
+    <div>
+      {months.map((month) => (
+        <OneMonth
+          key={month.month.toString()}
+          month={month}
+          characteristicRevMap={characteristicRevMap}
+        />
+      ))}
+    </div>
+  );
 };
