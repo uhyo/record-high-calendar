@@ -45,7 +45,7 @@ it("rokuyou & weekday", () => {
       rokuyou: "友引",
       weekDay: 2,
     })
-  ).toBe("火曜日・友引");
+  ).toBe("火曜日かつ友引");
 });
 it("year & month & weekDay", () => {
   expect(
@@ -72,5 +72,5 @@ it("full", () => {
       weekDay: 6,
       rokuyou: "先勝",
     })
-  ).toBe("2021年8月の土曜日・先勝");
+  ).toBe("2021年8月の土曜日かつ先勝");
 });

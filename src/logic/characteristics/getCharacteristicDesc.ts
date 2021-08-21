@@ -16,7 +16,7 @@ export function getCharacteristicDesc(
   }
   if (characteristic.rokuyou) {
     if (rekichuStr) {
-      rekichuStr += "・";
+      rekichuStr += "かつ";
     }
     rekichuStr += characteristic.rokuyou;
   }
