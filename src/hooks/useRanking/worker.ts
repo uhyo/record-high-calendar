@@ -13,7 +13,7 @@ ctx.addEventListener("message", (e: MessageEvent) => {
     const dates = lines.flatMap((line) => {
       const [date, num] = line.split(",");
       const n = Number(num);
-      if (Number.isNaN(num)) {
+      if (Number.isNaN(n)) {
         return [];
       }
       return [{ date: date!, num: n }];
