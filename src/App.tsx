@@ -17,7 +17,7 @@ function App() {
   return (
     <div className={classes.App}>
       <Suspense fallback={<p className={classes.loading}>Loading...</p>}>
-        <header className={classes["App-header"]}>
+        <header className={classes.header}>
           <h1>過去最高カレンダー</h1>
         </header>
         <main className={classes.main}>
@@ -31,6 +31,16 @@ function App() {
             )}
           </div>
         </main>
+        <footer className={classes.footer}>
+          <p>
+            <a
+              href="https://github.com/uhyo/record-high-calendar"
+              rel="external noopener"
+            >
+              GitHub
+            </a>
+          </p>
+        </footer>
       </Suspense>
     </div>
   );
