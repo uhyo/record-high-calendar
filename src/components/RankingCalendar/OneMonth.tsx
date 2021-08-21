@@ -14,7 +14,9 @@ export const OneMonth: React.FC<Props> = ({ month, characteristicRevMap }) => {
   return (
     <section>
       <h1 className={classes.monthTitle}>
-        {month.month.year}年{month.month.month}月
+        <time dateTime={month.month.toString()}>
+          {month.month.year}年{month.month.month}月
+        </time>
       </h1>
       <div className={classes.month}>
         {month.weeks.map((week, i) => (

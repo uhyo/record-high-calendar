@@ -22,7 +22,9 @@ function App() {
         <main className={classes.main}>
           <DataInput onChange={onChange} />
           <hr className={classes.separator} />
-          <RankingCalendar rankingLoadable={ranking} />
+          <div aria-live="polite">
+            <RankingCalendar rankingLoadable={ranking} />
+          </div>
         </main>
       </Suspense>
     </div>

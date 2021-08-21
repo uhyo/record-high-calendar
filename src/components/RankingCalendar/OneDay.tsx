@@ -50,15 +50,17 @@ export const OneDay: React.FC<Props> = ({ day, characteristicRevMap }) => {
 
   return (
     <div className={classes.day}>
-      <span
+      <time
         className={classList(
           classes.dateDisplay,
           isSaturday && classes.saturday,
           isSunday && classes.sunday
         )}
+        dateTime={day.day.toString()}
+        title={`${day.day.year}年${day.day.month}月${day.day.day}日`}
       >
-        {day.day.day}
-      </span>
+        <span aria-hidden>{day.day.day}</span>
+      </time>
       <span className={classes.numberDisplay}>{day.num}</span>
       {rankDesc && (
         <p className={classes.rankDesc}>
