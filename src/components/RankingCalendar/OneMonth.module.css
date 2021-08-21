@@ -8,10 +8,11 @@
 .monthTitle {
   width: 100%;
   max-width: 1260px;
-  height: 2rem;
+  height: 2.5rem;
   margin: 1em auto;
   padding: 0.25rem;
   font-size: 1.5em;
+  line-height: 1.35em;
   font-weight: bold;
   background-color: var(--h1-bg-color);
   color: var(--h1-fg-color);
@@ -23,11 +24,11 @@
 }
 
 .month {
+  width: 100%;
   max-width: 1260px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  row-gap: 0.5em;
 }
 
 .week {
@@ -55,24 +56,33 @@
 
 @media (min-width: 901px) {
   .section {
-    height: var(--calendar-table-height);
+    height: var(--calendar-grid-height);
     contain: size layout paint;
+  }
+  .month {
+    row-gap: 0.5em;
   }
 }
 
 @media (max-width: 900px) {
-  .monthTitle {
-    margin: 0.25em 0;
+  .section {
+    height: var(--calendar-chest-height);
+    contain: size layout paint;
   }
 
-  .month {
-    row-gap: 3px;
+  .monthTitle {
+    margin: 0.25em 0;
   }
 
   .week {
     flex-direction: column;
     align-items: stretch;
-    row-gap: 3px;
+  }
+  .day {
+    margin-bottom: 3px;
+  }
+  .week:last-child > .day:last-child {
+    margin-bottom: 0;
   }
 
   .day {

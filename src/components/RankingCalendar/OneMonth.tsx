@@ -21,15 +21,34 @@ type Props = {
 export const OneMonth: React.FC<Props> = memo(
   ({ month, characteristicRevMap, renderDetail }) => {
     // estimate height of this component to reduce layout time
-    const estimatedHeight = useMemo(() => {
+    const estimatedGridHeight = useMemo(() => {
       // cell has aspect-ratio: 1 / 1
-      const cellHeight = `((100vw - 2rem - 0.5rem * 6) / 7)`;
+      const cellHeight = `((min(1260px, 100vw) - 2rem - 0.5rem * 6) / 7)`;
       const calendarPartHeight = `(${cellHeight} * ${
         month.weeks.length
       } + 0.5rem * ${month.weeks.length - 1})`;
       const headerHeight = "5rem";
       return `calc(${headerHeight} + ${calendarPartHeight})`;
     }, [month]);
+    const estimatedChestHeight = useMemo(() => {
+      const cellHeight = "3rem";
+      const cellCount = month.weeks.reduce(
+        (acc, week) => acc + week.filter((d) => d).length,
+        0
+      );
+      const calendarPartHeight = `(${cellHeight} * ${cellCount} + 3px * ${
+        cellCount - 1
+      })`;
+      const headerHeight = "3rem";
+      return `calc(${headerHeight} + ${calendarPartHeight})`;
+    }, [month]);
+    const styleObject = useMemo<Record<string, string>>(
+      () => ({
+        "--calendar-grid-height": estimatedGridHeight,
+        "--calendar-chest-height": estimatedChestHeight,
+      }),
+      [estimatedGridHeight, estimatedChestHeight]
+    );
 
     const sectionRef = useRef<HTMLElement | null>(null);
     const scrolledFlag = useRef(false);
@@ -44,16 +63,7 @@ export const OneMonth: React.FC<Props> = memo(
     }, []);
 
     return (
-      <section
-        ref={sectionRef}
-        style={
-          { "--calendar-table-height": estimatedHeight } as Record<
-            string,
-            string
-          >
-        }
-        className={classes.section}
-      >
+      <section ref={sectionRef} style={styleObject} className={classes.section}>
         <h1 className={classes.monthTitle}>
           <time dateTime={month.month.toString()}>
             {month.month.year}年{month.month.month}月

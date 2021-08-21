@@ -40,8 +40,6 @@ export const RankingCalendar: React.FC<Props> = ({ rankingLoadable }) => {
     }
   }, [months, render]);
 
-  console.log({ renderingMode });
-
   return (
     <div>
       {months &&
